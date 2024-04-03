@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Lobster&family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Titillium+Web:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet" />
+    <!--Link to external style sheets-->
+    <link rel="stylesheet" href="quiz.css" />
+
+    <!-- Create the title of the page -->
+    <title>Quiz</title>
+</head>
+
+<body>
+    <!-- Add a navigation bar -->
+    <header>
+        <div class="backImg">
+            <img src="Images/movie-elements-black-background-with-copy-space.jpg" alt="backimage">
+        </div>
+    </header>
+    <div class="mainCont">
+        <div class="QuizMain">
+            <div class="QuizHeader">
+                <!-- Create a title section -->
+                <h2 class="MainTitle"><b>Quizz</b></h2>
+                <div class="Timer" style="border-radius: 8px;">
+                    <div class="TimerDesc">Time Left</div>
+                    <div id="Timer"></div>
+                </div>
+            </div>
+            <div id="Contner1">
+                <form name="form" class="form">
+                    <br /><br /><br />
+                    <!--Create Quiz questions -->
+                    <!--Question no 1 -->
+                    <div class="Question1" id="QnOne">
+                        <p class="question">
+                            1. What is the highest-grossing film of all time??
+                        </p>
+                        <!--Question no 1 -->
+
+                        <ul class="option">
+                            <label class="answers">
+                                <input class="answer" type="radio" name="Qn1" value="0" id="Titanic" />
+                                <label for="Titanic">Titanic</label>
+                            </label>
+                            <label class="answers">
+                                <input class="answer" type="radio" name="Qn1" value="0" id="Avengers: Endgame" />
+                                <label for="Avengers: Endgame">Avengers: Endgame</label>
+                            </label>
+                            <label class="answers">
+                                <input class="answer" type="radio" name="Qn1" value="10" id="Avatar" />
+                                <label id="CorrectStr1" for="Avatar">Avatar </label>
+                            </label>
+                            <label class="answers">
+                                <input class="answer" type="radio" name="Qn1" value="0" id="Star Wars: The Force Awakens" />
+                                <label for="Star Wars: The Force Awakens">Star Wars: The Force Awakens</label>
+                            </label>
+                        </ul>
+                    </div>
+
+                    <!--Question no 2 -->
+                    <div class="Question2">
+                        <p class="question">
+                            2. Which actor is often referred to as the "King of Bollywood"?
+                        </p>
+
+                        <ul class="option">
+                            <label class="answers">
+                                <input class="answer" type="radio" name="Qn2" value="10" id="Shah Rukh Khan" />
+                                <label for="Shah Rukh Khan" id="CorrectStr2">Shah Rukh Khan</label>
+                            </label>
+                            <label class="answers">
+                                <input class="answer" type="radio" name="Qn2" value="0" id="Salman Khan" />
+                                <label for="Salman Khan">Salman Khan</label>
+                            </label>
+                            <label class="answers">
+                                <input class="answer" type="radio" name="Qn2" value="0" id="Aamir Khan" />
+                                <label for="Aamir Khan">Aamir Khan</label>
+                            </label>
+                            <label class="answers">
+                                <input class="answer" type="radio" name="Qn2" value="0" id="Akshay Kumar" />
+                                <label for="Akshay Kumar">Akshay Kumar</label>
+                            </label>
+                        </ul>
+                    </div>
+
+                    <!--Question no 3 -->
+                    <div class="Question3">
+                        <p class="question">
+                            3. Which city in South Korea is known for hosting the annual Seoul International Drama Awards, celebrating outstanding Kdramas from around the world?
+
+                        </p>
+
+                        <ul class="option">
+                            <label class="answers">
+                                <input class="answer" type="radio" name="Qn3" value="0" id="Busan" />
+                                <label for="Busan">Busan</label>
+                            </label>
+                            <label class="answers">
+                                <input class="answer" type="radio" name="Qn3" value="10" id="Seoul" />
+                                <label id="CorrectStr3" for="Seoul">Seoul</label>
+                            </label>
+                            <label class="answers">
+                                <input class="answer" type="radio" name="Qn3" value="0" id="Incheon" />
+                                <label for="Incheon">Incheon</label>
+                            </label>
+                            <label class="answers">
+                                <input class="answer" type="radio" name="Qn3" value="0" id="Daegu" />
+                                <label for="Daegu">Daegu</label>
+                            </label>
+                        </ul>
+                    </div>
+
+                    <!--Question no 4 -->
+                    <div class="Question4">
+                        <p class="question">
+                            4. Which influential anime director is known for creating the movie "Akira" and the anime series "Ghost in the Shell"?
+                        </p>
+
+                        <ul class="option">
+                            <label class="answers">
+                                <input class="answer" type="radio" name="Qn4" value="0" id="Makoto Shinkai<" />
+                                <label for="Makoto Shinkai">Makoto Shinkai</label>
+                            </label>
+                            <label class="answers">
+                                <input class="answer" type="radio" name="Qn4" value="0" id="Mamoru Hosoda" />
+                                <label for="Mamoru Hosoda">Mamoru Hosoda</label>
+                            </label>
+                            <label class="answers">
+                                <input class="answer" type="radio" name="Qn4" value="0" id="Hayao Miyazaki" />
+                                <label for="Hayao Miyazaki">Hayao Miyazaki</label>
+                            </label>
+                            <label class="answers">
+                                <input class="answer" type="radio" name="Qn4" value="10" id="Katsuhiro Otomo" />
+                                <label id="CorrectStr4" for="Katsuhiro Otomo">Katsuhiro Otomo</label>
+                            </label>
+                        </ul>
+                    </div>
+                    <!--Question no 5 -->
+                    <div class="Question5">
+                        <p class="question">
+                            5. Which director is known for creating the "Jurassic Park" film series?
+                        </p>
+
+                        <ul class="option">
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn5" value="0" id="James Cameron" />
+                                <label for="James Cameron">James Cameron</label>
+                            </label>
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn5" value="10" id="Steven Spielberg" />
+                                <label id="CorrectStr5" for="Steven Spielberg">Steven Spielberg </label>
+                            </label>
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn5" value="0" id="Christopher Nolan" />
+                                <label for="Christopher Nolan">Christopher Nolan</label>
+                            </label>
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn5" value="0" id="Martin Scorseses" />
+                                <label for="Martin Scorsese">Martin Scorsese</label>
+                            </label>
+                        </ul>
+                    </div>
+                    <!--Question no 6 -->
+                    <div class="Question6">
+                        <p class="question">
+                            6. Who is the first Indian actress to win an Oscar?
+                        </p>
+
+                        <ul class="option">
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn6" value="0" id="Aishwarya Rai Bachchan" />
+                                <label for="Aishwarya Rai Bachchan">Aishwarya Rai Bachchan</label>
+                            </label>
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn6" value="10" id="Priyanka Chopra" />
+                                <label id="CorrectStr6" for="Priyanka Chopra">Priyanka Chopra</label>
+                            </label>
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn6" value="0" id="Deepika Padukone" />
+                                <label for="Deepika Padukone">Deepika Padukone</label>
+                            </label>
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn6" value="0" id="Kareena Kapoor Khan" />
+                                <label for="Kareena Kapoor Khan">Kareena Kapoor Khan</label>
+                            </label>
+                        </ul>
+                    </div>
+                    <!--Question no 7 -->
+                    <div class="Question7">
+                        <p class="question">
+                            7. Which popular Kdrama genre often features a female protagonist disguising herself as a male character?
+                        </p>
+
+                        <ul class="option">
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn7" value="0" id="Fantasy" />
+                                <label for="Fantasy">Fantasy</label>
+                            </label>
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn7" value="0" id="Historical" />
+                                <label for="Historical">Historical</label>
+                            </label>
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn7" value="0" id="Rom-com" />
+                                <label for="Rom-com">Rom-com</label>
+                            </label>
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn7" value="10" id="Cross-dressing" />
+                                <label id="CorrectStr7" for="Cross-dressing">Cross-dressing</label>
+                            </label>
+                        </ul>
+                    </div>
+                    <!--Question no 8 -->
+                    <div class="Question8">
+                        <p class="question">
+                            8. In the anime series "Naruto," which powerful ninja possesses the Nine-Tails Fox Spirit sealed within him?
+                        </p>
+
+                        <ul class="option">
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn8" value="10" id="Naruto Uzumaki" />
+                                <label id="CorrectStr8" for="Naruto Uzumaki">Naruto Uzumaki</label>
+                            </label>
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn8" value="0" id="Sasuke Uchiha" />
+                                <label for="Sasuke Uchiha">Sasuke Uchiha</label>
+                            </label>
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn8" value="0" id="Kakashi Hatake" />
+                                <label for="Kakashi Hatake">Kakashi Hatake</label>
+                            </label>
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn8" value="0" id="Gaara of the Desert" />
+                                <label for="Gaara of the Desert">Gaara of the Desert</label>
+                            </label>
+                        </ul>
+                    </div>
+                    <!--Question no 9 -->
+                    <div class="Question9">
+                        <p class="question">
+                            9. Which animated movie won the Academy Award for Best Picture in 1994?
+                        </p>
+
+                        <ul class="option">
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn9" value="0" id="Toy Story" />
+                                <label for=" Toy Story"> Toy Story</label>
+                            </label>
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn9" value="0" id="Shrek" />
+                                <label for="Shrek">Shrek</label>
+                            </label>
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn9" value="10" id="The Lion King<" />
+                                <label id="CorrectStr9" for="The Lion King">The Lion King</label>
+                            </label>
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn9" value="0" id="Frozen" />
+                                <label for="Frozen">Frozen</label>
+                            </label>
+                        </ul>
+                    </div>
+                    <!--Question no 10 -->
+                    <div class="Question10">
+                        <p class="question">
+                            10. Who is the first female director to gross over 1,000 crores worldwide with a Bollywood film?
+                        </p>
+                        <ul class="option">
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn10" value="0" id="Gauri Shinde" />
+                                <label for="Gauri Shinde">Gauri Shinde</label>
+                            </label>
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn10" value="0" id="Zoya Akhtar" />
+                                <label for="Zoya Akhtar">Zoya Akhtar</label>
+                            </label>
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn10" value="0" id="Reema Kagti" />
+                                <label for="Reema Kagti">Reema Kagti</label>
+                            </label>
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn10" value="10" id="Farah Khan" />
+                                <label id="CorrectStr10" for="Farah Khan">Farah Khan</label>
+                            </label>
+                        </ul>
+                    </div>
+                    <span class="submitter">
+                        <input class="Button" id="SubButton" onClick="SubQuiz();this.disabled = true;" type="Button"
+                            value="Submit" />
+                    </span>
+                    <br />
+
+                    <!--Create a class for go to the first question-->
+                    <a class="BackTop" href="#QnOne">Back to top</a>
+                </form>
+            </div>
+            <div class="QuizResult">
+                <!--Show user's answers-->
+                <div id="ShowAnswer" style="display: none">
+                    <div class="Result_Title">
+                        <h3 id="Result_Text">
+                            You have completed the Quiz
+                        </h3>
+                        <p>Your results for Quiz</p>
+                    </div>
+
+                    <div class="Quiz_Answers" id="Correct_answer_1"></div>
+                    <div class="Quiz_Answers" id="Correct_answer_2"></div>
+                    <div class="Quiz_Answers" id="Correct_answer_3"></div>
+                    <div class="Quiz_Answers" id="Correct_answer_4"></div>
+                    <div class="Quiz_Answers" id="Correct_answer_5"></div>
+                    <div class="Quiz_Answers" id="Correct_answer_6"></div>
+                    <div class="Quiz_Answers" id="Correct_answer_7"></div>
+                    <div class="Quiz_Answers" id="Correct_answer_8"></div>
+                    <div class="Quiz_Answers" id="Correct_answer_9"></div>
+                    <div class="Quiz_Answers" id="Correct_answer_10"></div>
+
+                    <!--Show user's Score -->
+                    <div class="Quiz_Score">
+                        <h2 id="User_Score"></h2>
+                    </div>
+
+                    <!--Create Buttons-->
+                    <input type="Button" value="Try Again" onclick="location.reload();" class="Button"
+                        id="ResetButton" />
+                    <input type="Button" value="Show Answers" class="Button" id="Show" />
+                    <input type="Button" value="Quit" class="Button" id="quit" onclick="location.href = '../Shashika/quizstart.html'"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                        <div class="footerPageEditor">
+                            <div class="footerFI">Let's see the <a href="editor.html" class="footerEditor">page editor</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--link to javascript code-->
+    <script src="quiz.js"></script>
+</body>
+
+</html>

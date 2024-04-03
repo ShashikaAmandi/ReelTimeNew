@@ -1,0 +1,292 @@
+/* Quiz CSS Code */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0d8d8;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+div {
+    scroll-behavior: smooth;
+}
+
+.backImg {
+    position: absolute;
+    z-index: -10;
+    top: 0;
+    left: 0;
+    height: 110vh;
+    width: 100%;
+}
+.backImg img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+.mainCont {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    
+}
+/* .QuizSt{ 
+	position: absolute;
+    top:  50%;
+    left: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.20);
+} */
+.quizStCont {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.QuizSt{
+    /* margin-top: -10px; */
+    width: 750px;
+    height: 340px;
+    background: #fbf7f7;
+    border-radius: 5px;
+    opacity: 1;
+    pointer-events: center;
+    transition: all 0.3s ease;
+	z-index: 5;
+
+}
+.QuizSt .StarTitl{
+	height: 60px;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    border-radius: 5px 5px 0 0;
+    font-size: 25px;
+    font-weight: 700;
+}
+.QuizSt .StList{
+	padding: 18px 35px;
+}
+.QuizSt .StList li{
+	margin: 12px 0;
+    font-size: 18px;
+}
+.QuizSt .Buttons{
+	height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 35px;
+    border-top: 1px solid rgb(180, 172, 172);
+}   
+.QuizSt .Buttons Button{
+	margin: 0 15px;
+    height: 45px;
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: 550;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid #111211;
+    transition: all 0.3s ease;
+    background-color: #300000;
+	color: white;
+    transition: all 0.3s ease-in-out;
+    font-weight: 400;
+}
+
+.QuizSt .Buttons .btnqt {
+    background-color: white;
+    color: #300000;
+    border: 2px solid #300000;
+}
+
+.QuizSt .Buttons Button:hover{
+	opacity: 80%;
+    transform: scale(0.9);
+}
+.QuizMain{
+    margin-top: 10px;
+	width: 740px;
+    background: #fff;
+    border-radius: 5px;
+    opacity: 1;
+    pointer-events:auto;
+    transition: all 0.3s ease;
+	z-index:5;
+}
+
+.QuizMain .QuizHeader .MainTitle{
+	font-size: 35px;
+}
+
+.QuizMain .QuizHeader{
+    z-index: 1;
+    height: 75px;
+    padding: 0 25px;
+    background: #ffffff;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 3px 1px 1px rgba(96, 94, 94, 0.1);
+	position: relative;
+	top: 0;
+	width: 740px;
+}
+
+.QuizMain .QuizHeader .Timer{
+	color: white;
+    background: rgba(105, 000, 000, 0.8);
+    border-radius: 20px;
+    height: 45px;
+    padding: 0 8px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 175px;
+}
+.QuizMain .QuizHeader .Timer .TimerDesc{
+	font-weight: 400;
+    font-size: 17px;
+    user-select: none;
+}
+.QuizMain .QuizHeader .Timer #Timer{
+	font-size: 17px;
+    height: 32px;
+    width: 77px;
+    color: #000000;
+    border-radius: 5px;
+    line-height: 30px;
+    text-align: center;
+    background: white;
+    border: 1.22px solid #626467;
+}
+#Contner1{
+	padding: 0 30px 20px 30px;
+    background: #fff;
+	overflow-y: scroll;
+	height:450px;
+    box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.1);
+}
+#Contner1 form .question{
+	font-size: 25px;
+    font-weight: 620;
+}
+#Contner1 form .option{
+	padding: 15px 0px;
+    display: block;
+}
+
+#Contner1 form .option .answers:hover{
+    color: #300000;
+    background: #ffd1d1;
+    border: 2px solid #300000;
+}
+
+#Contner1 form .option .answers{
+    background: rgb(255, 255, 255);
+    border:1.22px solid #300000;
+    border-radius: 12px;
+    padding: 8px 15px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#Contner1 form .Button{
+    float: right;
+    margin: 1px;
+    height: 38px;
+    padding: 0 20px;
+    font-size: 20px;
+    font-weight: 550;
+    outline: none;
+    cursor: pointer;
+    border: none; 
+    border-radius: 10px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    border: none;
+	color: white;
+    background: #300000;
+}
+#Contner1 form .Button:hover{
+    color:white;
+	background: #069821;
+}
+.QuizMain .BackTop{
+    color:#000000;
+    padding:10px;
+    text-decoration: none;
+    text-align: center;
+}
+.QuizMain .BackTop:hover{
+    color: #67aefb;
+}
+.QuizResult{
+	width: 740px;
+    background: #fefbfe;
+    border-radius: 10px;
+    opacity: 1;
+    pointer-events:auto;
+    transition: all 0.3s ease;
+	z-index:5; 
+}
+.QuizResult .Quiz_Answers{
+    border: 1px solid #df2e2e;
+    padding: 0px 15px;
+    font-size: 16px;
+    border-radius: 2px;
+}
+.QuizResult .Result_Title{
+    text-align: center;
+	font-size: 28px;
+    padding:5px;
+}
+.QuizResult .Button:hover{
+    color:white;
+	background: #3a3a3a;
+}  
+
+.QuizResult .Button{
+    margin: 8px 8px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    transition: all 0.3s ease;
+	color: #000000;
+    background: #ffffff;
+
+}
+
+.Quiz_Score{
+    position: relative;
+    left: 20px;
+}
